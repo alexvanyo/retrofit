@@ -59,7 +59,7 @@ This means libraries compiled against 2.x can still be used with the 3.x version
 
 **Fixed**
 
- - Nothing yet!
+ - Ensure that exceptions thrown from failure to parse method annotations can be observed by multiple threads/callers. Previously only the first caller would see the actual parsing exception and other callers would get a cryptic `ClassCastException`.
 
 
 ## [2.10.0] - 2024-03-18
